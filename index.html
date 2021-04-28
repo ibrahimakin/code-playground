@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Playground</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <script src="./script.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <h2>HTML</h2>
+  <div class="highLite">
+    <div class="highLite_colors"></div>
+    <div class="highLite_editable" data-lang="html">
+      &lt;h2 class="head"&gt;TODO: HTML is for &lt;b&gt;homework&lt;/b&gt;&lt;/h2&gt;&lt;div id="id01"&gt;Code Playground&lt;/div&gt;
+    </div>
+  </div>
+  <h2>JAVASCRIPT</h2>
+  <div class="highLite">
+    <div class="highLite_colors"></div>
+    <div class="highLite_editable" data-lang="js">
+      // Type some JavaScript here
+      const arr = ["high", "light"];
+      let n = 2.1 * 3;
+      if (n &lt; 10) {
+      console.log(`${n} is &lt;&#61; than 10`);
+      }
+      function casual (str) {
+      str = str || "nonsense";
+      // alert("Just a casual"+ str +", still many TODOs");
+      }
+      casual (arr.join('') +" idea!");
+      document.getElementById('id01').style="color: red;";
+      /**
+      * The code is a proof of concept and far from
+      * perfect. You should never use regex but create or use a parser.
+      * Meanwhile, play with it and improve it!
+      */
+    </div>
+  </div>
+  <button id="run-button">Run</button>
+  <h2>RESULT</h2>
+  <div id="code-result">
+
+  </div>
+</body>
+</html>
