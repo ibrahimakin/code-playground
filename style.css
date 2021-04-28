@@ -1,4 +1,4 @@
-* {margin: 0; box-sizing: boder-box;}
+* {margin: 0; box-sizing: border-box;}
 
 body {
     font: 14px/1.4 sans-serif;
@@ -7,17 +7,31 @@ body {
     padding: 16px;
 }
 
-#editor {
+#run-section {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+#run-section > div {
+    display: flex;
+    align-items: center;
+}
+
+#run-button, #instant-run, label {
+    cursor: pointer;
 }
 
 #run-button {
-    margin: 5px;
-    padding: 5px;
-    cursor: pointer;
+    padding: 5px 10px;
+    color: #fff;
+    background-color: hsl(220, 16%, 16%);
 }
-#code-result{
-    background-color: white;
+
+#code-result {
+    background-color: #fff;
 }
 
 h2 {
